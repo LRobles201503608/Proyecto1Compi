@@ -1,0 +1,16 @@
+digraph automata_finito {
+	rankdir=LR;
+	graph [label="ultima", labelloc=t, fontsize=20]; 
+	node [shape=doublecircle, style = filled,color = mediumseagreen]; "4";
+	node [shape=circle];
+	node [color=midnightblue,fontcolor=white];
+	edge [color=red];
+	secret_node [style=invis];
+	secret_node -> "0" [label="inicio"];
+	"0" -> "0" [label="{abecedario}"];
+	"0" -> "0" [label=""];
+	"0" -> "1" [label=""];
+	"1" -> "2" [label=""];
+	"2" -> "3" [label=""];
+	"3" -> "3" [label="{abecedario}"];
+}

@@ -1,0 +1,21 @@
+digraph automata_finito {
+	rankdir=LR;
+	graph [label="Expresion320", labelloc=t, fontsize=20]; 
+	node [shape=doublecircle, style = filled,color = mediumseagreen]; "12";
+	node [shape=circle];
+	node [color=midnightblue,fontcolor=white];
+	edge [color=red];
+	secret_node [style=invis];
+	secret_node -> "0" [label="inicio"];
+	"1" -> "3" [label="TRUE"];
+	"1" -> "2" [label="TRUE"];
+	"4" -> "5" [label="{abecedario}"];
+	"6" -> "6" [label="{conjnum}"];
+	"7" -> "8" [label="{abecedario}"];
+	"9" -> "9" [label="{conjnum}"];
+	"10" -> "11" [label="{abecedario}"];
+	"11" -> "2" [label="{abecedario}"];
+	"11" -> "1" [label="{abecedario}"];
+	"11" -> "11" [label="{abecedario}"];
+	"11" -> "12" [label="{abecedario}"];
+}
